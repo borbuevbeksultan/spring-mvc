@@ -1,0 +1,3 @@
+
+
+*) git branch --set-upstream-to=origin/master | link current local branch with remote

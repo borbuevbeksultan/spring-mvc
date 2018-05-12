@@ -8,7 +8,7 @@
 mvn tomcat7:deploy
 *) To deploy then, run
 mvn tomcat8:deploy
-
+That command will copy path target to tomcat's web-apps directory
 
 *) setting.xml <- maven
 *) tomcat-users.xml <- tomcat

@@ -5,3 +5,7 @@
 *) to deploy app through tomcat, it need to configure settings.xml of Maven.
 *) Tomcat should be ran.
 *)
+
+
+*) setting.xml <- maven
+*) tomcat-users.xml <- tomcat

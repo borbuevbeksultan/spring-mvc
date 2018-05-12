@@ -4,7 +4,10 @@
 
 *) to deploy app through tomcat, it need to configure settings.xml of Maven.
 *) Tomcat should be ran.
-*)
+*) To deploy app first time, run
+mvn tomcat7:deploy
+*) To deploy then, run
+mvn tomcat8:deploy
 
 
 *) setting.xml <- maven

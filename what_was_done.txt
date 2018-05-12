@@ -1,3 +1,7 @@
 
 
 *) git branch --set-upstream-to=origin/master | link current local branch with remote
+
+*) to deploy app through tomcat, it need to configure settings.xml of Maven.
+*) Tomcat should be ran.
+*)

@@ -12,6 +12,12 @@
     <!--  default value -> JAR  -->
     <packaging>war</packaging>
 
+    <properties>
+        <spring-framework-version>4.0.5.RELEASE</spring-framework-version>
+        <spring-security-version>4.0.1.RELEASE</spring-security-version>
+        <hibernate.version>4.3.5.Final</hibernate.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -28,10 +34,21 @@
             <artifactId>spring-webmvc</artifactId>
             <version>4.3.14.RELEASE</version>
         </dependency>
+
         <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-            <version>8.5.15</version>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring-security-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring-security-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+            <version>${spring-security-version}</version>
         </dependency>
     </dependencies>
 

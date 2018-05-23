@@ -16,7 +16,7 @@
                 login-page="/login"
                 default-target-url="/"/>
 
-        <security:intercept-url pattern="/login" access="isAnonymous()"/>
+        <security:intercept-url pattern="/login" access="permitAll()"/>
         <security:intercept-url pattern="/**" access="hasAnyRole('ROLE_ADMIN', 'ROLE_USER')"/>
 
     </security:http>

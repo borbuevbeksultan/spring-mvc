@@ -6,8 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.util.Arrays;
-
 @Controller
 public class HomeController {
 
@@ -17,7 +15,7 @@ public class HomeController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
         String[] names = context.getBeanDefinitionNames();
-        Arrays.stream(names).forEach(System.out::println);
+
         return "index";
     }
 }

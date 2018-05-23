@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <!-- your webpage info goes here -->
 
     <title>My First Website</title>

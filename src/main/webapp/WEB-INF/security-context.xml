@@ -7,10 +7,17 @@
        http://www.springframework.org/schema/security
        http://www.springframework.org/schema/security/spring-security.xsd">
 
-    <security:http auto-config="true">
+    <security:http
+            auto-config="true"
+            disable-url-rewriting="false">
 
+        <security:csrf disabled="true"/>
+        <security:form-login
+                login-page="/login"
+                default-target-url="/"/>
+
+        <security:intercept-url pattern="/login" access="isAnonymous()"/>
         <security:intercept-url pattern="/**" access="hasRole('ROLE_ADMIN')"/>
-        <security:form-login/>
 
     </security:http>
 
